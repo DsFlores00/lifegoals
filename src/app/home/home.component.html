@@ -1,0 +1,43 @@
+<div class="dashboard-container">
+  
+  <section class="form-column">
+    <div class="panel-header">
+      <h2>Añadir metas de vida</h2>
+    </div>
+    
+    <div class="panel-body">
+      <p class="form-instructions">¿Cuales son tus metas?</p>
+      
+      <input 
+        type="text" 
+        [(ngModel)]="nuevaMeta.meta" 
+        placeholder="Enter your goal here..."
+        class="goal-input"
+      />
+      
+      <button (click)="agregarMeta()" class="btn-add">
+        AÑADIR
+      </button>
+    </div>
+  </section>
+
+  <section class="list-column">
+    <div class="panel-header">
+      <h2>Mis metas de vida ({{ listaMetas.length }})</h2>
+    </div>
+    
+    <div class="panel-body cards-container">
+      <p *ngIf="listaMetas.length === 0" class="empty-message">
+        No goals registered yet. Start adding some!
+      </p>
+
+      <div *ngFor="let item of listaMetas" class="goal-card">
+        <button (click)="borrarMeta(item.id)" class="btn-delete">
+          ELIMINAR
+        </button>
+        <p class="goal-text">{{ item.meta }}</p>
+      </div>
+    </div>
+  </section>
+
+</div>

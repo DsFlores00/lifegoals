@@ -1,0 +1,28 @@
+<div class="about-container">
+  
+  <section class="profile-card">
+    <div class="panel-header">
+      <h2>Datos de Contacto</h2>
+    </div>
+    
+    <div class="panel-body profile-details">
+      <h3 class="dev-name">{{ developerProfile.name }}</h3>
+      <p class="dev-role"><strong>Rol:</strong> {{ developerProfile.role }}</p>
+      <p class="dev-inst"><strong>Institucion:</strong> {{ developerProfile.institution }}</p>
+      
+      <hr class="divider" />
+      
+      <div class="contact-info">
+        <p><strong>Email:</strong> {{ developerProfile.email }}</p>
+        <p><strong>Telefono:</strong> {{ developerProfile.phone }}</p>
+        <p>
+          <strong>GitHub:</strong> 
+          <a [href]="developerProfile.github" target="_blank" class="dev-link">
+            {{ developerProfile.github }}
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+</div>

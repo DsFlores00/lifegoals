@@ -1,0 +1,61 @@
+.about-container {
+  max-width: 600px;
+  margin: 40px auto 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.profile-card {
+  background-color: #24776f;
+  color: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.panel-header {
+  background-color: #42a99f;
+  padding: 15px 20px;
+}
+
+.panel-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.panel-body {
+  padding: 25px 20px;
+}
+
+.dev-name {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.dev-role, .dev-inst {
+  margin: 5px 0;
+  opacity: 0.9;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 20px 0;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.dev-link {
+  color: #46d280; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.dev-link:hover {
+  text-decoration: underline;
+}

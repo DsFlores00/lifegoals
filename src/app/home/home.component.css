@@ -1,0 +1,108 @@
+.dashboard-container {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.form-column, .list-column {
+  flex: 1;
+  background-color: #24776f; /* Azul base como el fondo del PDF */
+  color: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.panel-header {
+  background-color: #42a99f; /* Tono de azul más oscuro para los encabezados */
+  padding: 15px 20px;
+}
+
+.panel-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.panel-body {
+  padding: 25px 20px;
+}
+
+.form-instructions {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.goal-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.btn-add {
+  background-color: #27ae60; /* botones */
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-add:hover {
+  color: #ffffff;
+  background-color: #1a6f3d;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.goal-card {
+  background-color: #145750;
+  padding: 15px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.btn-delete {
+  background-color: #27ae60; /* Mismo verde que pide la captura para eliminar */
+  color: #333;
+  border: none;
+  padding: 5px 15px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  color: #ffffff;
+  background-color: #1a6f3d;
+}
+
+.goal-text {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.empty-message {
+  text-align: center;
+  font-style: italic;
+  opacity: 0.5;
+}
