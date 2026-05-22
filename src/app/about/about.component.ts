@@ -14,7 +14,7 @@ export class AboutComponent implements OnInit {
     institution: 'Universidad Veracruzana',
     email: 'flores93@gmail.com',
     phone: '2721543043',                 
-    github: 'https://github.com/DsFlores00'
+    github: 'https://github.com/DsFlores00',
     status: 'Proyecto LifeGoals desplegado con éxito en producción'
   };
 
