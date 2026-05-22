@@ -1,9 +1,9 @@
 #ETAPA 1: Compilación de la aplicación (Build) 
-FROM node:20-alpine AS 
-build WORKDIR /app
+FROM node:20-alpine AS build 
+WORKDIR /app
 # Copiamos los archivos de empaquetado e instalamos dependencias
-COPY package*.json 
-./ RUN npm install --legacy-peer-deps
+COPY package*.json ./ 
+RUN npm install --legacy-peer-deps
 # Copiamos el resto del código fuente y compilamos en modo producción
 COPY . . 
 RUN npm run build -- --configuration=production
