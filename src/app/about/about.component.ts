@@ -9,7 +9,7 @@ export class AboutComponent implements OnInit {
 
   // Objeto estructurado con tu información de contacto profesional
   developerProfile = {
-    name: 'Flores Aguilar Denisse',
+    name: 'Denisse',
     role: 'Estudiante de Ingenieria de Software',
     institution: 'Universidad Veracruzana',
     email: 'flores93@gmail.com',
