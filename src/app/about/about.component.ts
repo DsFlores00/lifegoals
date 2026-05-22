@@ -15,7 +15,7 @@ export class AboutComponent implements OnInit {
     email: 'flores93@gmail.com',
     phone: '2721543043',                 
     github: 'https://github.com/DsFlores00',
-    status: 'Proyecto LifeGoals desplegado con éxito en producción'
+    status: 'Estatus: Funcionando desde workflow'
   };
 
   constructor() { }
