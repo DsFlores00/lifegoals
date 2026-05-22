@@ -9,6 +9,8 @@ COPY . .
 RUN npm run build -- --configuration=production
 # ETAPA 2: Servidor de producción (Run)
 FROM nginx:alpine
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
 # Copiamos los archivos compilados de Angular al directorio de Nginx
 COPY --from=build /app/dist/lifegoals/browser /usr/share/nginx/html
 # Exponemos el puerto estándar 80 del contenedor
