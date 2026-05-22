@@ -32,3 +32,8 @@ jobs:
         tags: |
           ${{ secrets.DOCKER_USERNAME }}/lifegoals:latest
           ${{ secrets.DOCKER_USERNAME }}/lifegoals:${{ github.sha }}
+
+# NUEVO PASO: Notificar a Render para automatizar el despliegue - name: 
+    Trigger Render Deploy
+      run: |
+        curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK }}"
